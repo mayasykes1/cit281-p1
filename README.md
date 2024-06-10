@@ -13,22 +13,20 @@
 <li>Create and execute a JavaScript files using Node.js and Visual Studio Code (VSCode) terminal and Run and Debug</li>
 
 ### Code:
-#### p1-date.js
-function dayOfTheWeek() {
+#### p1-date.js 
+<code>function dayOfTheWeek() {
     const weekDays = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const day = new Date();
     const currentDay = day.getDay();
     console.log(weekDays[currentDay]);
 }
-
 console.log('Today is: ');
-console.log(dayOfTheWeek());
+console.log(dayOfTheWeek());</code>
 
 #### p1-random.js
-function getRandomInteger(min, max) {
+<code>function getRandomInteger(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
-
 function getRandomString() {
     const alphabet = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,z,y,z';
     const alphabet_array = alphabet.split(",");
@@ -37,16 +35,13 @@ function getRandomString() {
     const randomAmount = getRandomInteger(minLength,maxLength);
     let random;
     let word = "";
-
     for(let i = 0; i < randomAmount; i++) {
         random = getRandomInteger(0,26);
         word += (alphabet_array[random]);
     }
-    
     console.log(word)
 }
-
-getRandomString();
+getRandomString();</code>
 
 ### Photos:
 <img width="697" alt="p1-folders" src="https://github.com/mayasykes1/cit281-p1/assets/52678410/84aed07c-576d-4576-965c-ee9072db2210">
